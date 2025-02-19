@@ -3,107 +3,574 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Simply chocolate</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
+        <title>Simply Chocolate</title>
     </head>
     <body>
-        <section class="taste">
-            <div class="container">
-                <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span  class="title-accent">TASTE</span> SENSATION</h2>
-                <ul class="taste-list">
-                    <li class="taste-item">
-                        <button class="taste-menu-open-btn">
-                            <svg class="taste-icon" width="22" height="22">
-                                <use href="./symbol-defs.svg#icon-taste-pointer"></use>
+        <header class="header">
+            <div class="container header-container">
+                <a class="header-logo" href="./index.html"
+                    >SIMPLY
+                    <span class="header-logo-accent">CHOCOLATE</span>
+
+                    <svg class="header-logo-img">
+                        <use
+                            href="./symbol-defs.svg#icon-logo"
+                            class="header-logo-icon"
+                        ></use>
+                    </svg>
+                </a>
+
+                <button class="header-menu-btn">
+                    <svg class="header-menu-open-btn">
+                        <use
+                            href="./symbol-defs.svg#icon-mobile-menu-open-btn"
+                            class="header-menu-open-icon"
+                        ></use>
+                    </svg>
+                </button>
+
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href="">Home</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href=""
+                                >How it’s made?</a
+                            >
+                        </li>
+                        <li class="header-nav-item">
+                            <a class="header-nav-link" href=""
+                                >Chocolate is loved</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-social-list">
+                    <li class="header-social-item">
+                        <a
+                            class="header-social-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="#"
+                        >
+                            <svg class="header-social-img">
+                                <use
+                                    href="./symbol-defs.svg#icon-instagram"
+                                    class="header-social-icon"
+                                ></use>
                             </svg>
-                        </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-1-1x.png" alt="">
-                            <h3 class="taste-subtitle">mILK CHOCOLATE</h3>
-                        </img>
-                    
+                        </a>
                     </li>
-                    <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                        <svg class="taste-icon" width="22" height="22">
-                            <use href="./symbol-defs.svg#icon-taste-pointer"></use>
-                        </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-2-1x.png" alt="">
-                            <h3 class="taste-subtitle">mILK</h3>
-                        </img>
-                    
-                </li>
-                <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                       <svg class="taste-icon" width="22" height="22">
-                                <use href="./symbol-defs.svg#icon-taste-pointer"></use>
+                    <li class="header-social-item">
+                        <a
+                            class="header-social-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="#"
+                        >
+                            <svg class="header-social-img">
+                                <use
+                                    href="./symbol-defs.svg#icon-facebook"
+                                    class="header-social-icon"
+                                ></use>
                             </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-3-1x.png" alt="">
-                            <h3 class="taste-subtitle">nuts</h3>
-                        </img>
-                    
-                </li>
-                <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                       <svg class="taste-icon" width="22" height="22">
-                               <use href="./symbol-defs.svg#icon-taste-pointer"></use>
+                        </a>
+                    </li>
+                    <li class="header-social-item">
+                        <a
+                            class="header-social-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="#"
+                        >
+                            <svg class="header-social-img">
+                                <use
+                                    href="./symbol-defs.svg#icon-twitter"
+                                    class="header-social-icon"
+                                ></use>
                             </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-4-1x.png" alt="">
-                            <h3 class="taste-subtitle">sEMI - SWEET CHOCOLATE</h3>
-                        </img>
-                    
-                </li>
-                <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                       <svg class="taste-icon" width="22" height="22">
-                                <use href="./symbol-defs.svg#icon-taste-pointer"></use>
-                            </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-5-1x.png" alt="">
-                            <h3 class="taste-subtitle">CACAO</h3>
-                        </img>
-                    
-                </li>
-                <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                       <svg class="taste-icon" width="22" height="22">
-                                <use href="./symbol-defs.svg#icon-taste-pointer"></use>
-                            </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-6-1x.png" alt="">
-                            <h3 class="taste-subtitle">RASPBERRY</h3>
-                        </img>
-                    
-                </li>
-                <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                       <svg class="taste-icon" width="22" height="22">
-                                <use href="./symbol-defs.svg#icon-taste-pointer"></use>
-                            </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-7-1x.png" alt="">
-                            <h3 class="taste-subtitle">COCONUT OIL</h3>
-                        </img>
-                    
-                </li>
-                <li class="taste-item">
-                    <button class="taste-menu-open-btn">
-                       <svg class="taste-icon" width="22" height="22">
-                               <use href="./symbol-defs.svg#icon-taste-pointer"></use>
-                            </svg>
-                    </button>
-                        <img class="taste-img" src="./images/3.taste/tablet and mobile/img-8-1x.png" alt="">
-                            <h3 class="taste-subtitle">VANILLA</h3>
-                        </img>
-                    
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container hero-container">
+                    <h1 class="hero-title">
+                        Treat yourself or a loved one to our finest ingredients
+                        for a moment of pure delight!
+                    </h1>
+                    <div class="hero-buttons">
+                        <div class="hero-mobile-btns">
+                            <button class="hero-btn" type="button">
+                                Buy now
+                            </button>
+                            <a class="hero-btn-2" href="#">How it’s made</a>
+                        </div>
+
+                        <a class="hero-scroll-btn" href="#"
+                            >scroll down
+                            <svg class="hero-scroll-icon">
+                                <use
+                                    href="./symbol-defs.svg#icon-scroll-button"
+                                ></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="benefits">
+                <div class="container benefits-container">
+                    <h2 class="visually-hidden">Benefits</h2>
+                    <ul class="benefits-list">
+                        <li class="benefits-item">
+                            <div class="benefits-image">
+                                <svg class="benefits-icon">
+                                    <use
+                                        href="./symbol-defs.svg#icon-benefits-1"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="benefits-subtitle">Unsurpassed taste</h3>
+                            <p class="benefits-text">
+                                Crafted with the finest quality cocoa beans and
+                                a dedication to perfection, each bite is a
+                                decadent experience that simply cannot be
+                                matched. Savor the richness and complexity of
+                                our Unsurpassed Taste and discover a new level
+                                of chocolate bliss.
+                            </p>
+                        </li>
+                        <li class="benefits-item">
+                            <div class="benefits-image">
+                                <svg class="benefits-icon">
+                                    <use
+                                        href="./symbol-defs.svg#icon-benefits-2"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="benefits-subtitle">Affordable price</h3>
+                            <p class="benefits-text">
+                                Indulge in high-quality chocolate without
+                                breaking the bank with Simply Chocolate's
+                                selection of affordable treats. Enjoy
+                                mouth-watering truffles and velvety chocolate
+                                bars without sacrificing taste or quality.
+                                Browse our selection and indulge in affordable
+                                luxury today.
+                            </p>
+                        </li>
+                        <li class="benefits-item">
+                            <div class="benefits-image">
+                                <svg class="benefits-icon">
+                                    <use
+                                        href="./symbol-defs.svg#icon-benefits-3"
+                                    ></use>
+                                </svg>
+                            </div>
+                            <h3 class="benefits-subtitle">Own production</h3>
+                            <p class="benefits-text">
+                                We take pride in our own production process,
+                                ensuring that every step is carefully crafted to
+                                perfection. From selecting the finest
+                                ingredients to handcrafting each piece, our
+                                attention to detail is evident in every bite.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="taste">
+                <div class="container">
+                    <h2 class="taste-title title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="taste-title-accent">TASTE</span> SENSATION</h2>
+                    <ul class="taste-list">
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-1-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+
+                            <h3 class="taste-subtitle">mILK CHOCOLATE</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-2-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">mILK</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-3-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">nuts</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-4-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">sEMI - SWEET CHOCOLATE</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-5-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">CACAO</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-6-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">RASPBERRY</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-7-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">COCONUT OIL</h3>
+                        </li>
+                        <li class="taste-item">
+                            <svg class="taste-icon">
+                                <use></use>
+                            </svg>
+                            <img class="taste-image"
+                                src="./images/3.taste/tablet and mobile/img-8-1x.png"
+                                alt=""
+                                width="236"
+                                height="176"
+                            />
+                            <h3 class="taste-subtitle">VANILLA</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- <section class="made" id="made">
+                <div class="container">
+                    <h2>hOW IT’S made?</h2>
+                    <img
+                        src="./images/4.made/image-mobile-1x.jpg"
+                        alt="hot-to-made-chocolate"
+                        width="335"
+                        height="500"
+                    />
+                    <h3>
+                        Try our chocolates today and discover the perfect
+                        balance of flavor
+                    </h3>
+                    <ul>
+                        <li>
+                            <p>
+                                Heat the milk in a saucepan without bringing it
+                                to a boil. Add sugar and cocoa powder.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                At the same time, prepare a water bath. Melt the
+                                butter on it.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                "Mix" the milk mixture and already liquid
+                                butter. Mix thoroughly with a silicone spatula
+                                so that the mass becomes uniform and silky.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Heat the mixture over low heat, letting it
+                                barely boil.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Pour the chocolate into special containers (can
+                                be replaced with ice molds). Allow to cool and
+                                harden.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+            <!-- <section class="products">
+                <div class="container">
+                    <h2></h2>
+                    <ul>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                            <button></button>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+            <!-- <section class="sellers">
+                <div class="container">
+                    <h2></h2>
+                    <ul>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+            <!-- <section class="review">
+                <div class="container">
+                    <h2>chocolate is loved</h2>
+                    <ul>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <p></p>
+                        </li>
+                    </ul>
+                    <button type="button">Leave a review</button>
+                </div>
+            </section> -->
+        </main>
+        <!-- <footer>
+            <div class="container">
+                <p>Chocolate a delicious cure for a bad day</p>
+
+                <p>Contact us</p>
+                <address>
+                    <ul>
+                        <li>
+                            <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+                        </li>
+                        <li>
+                            <a href="mailto:simplychoc@gmail.com"
+                                >simplychoc@gmail.com</a
+                            >
+                        </li>
+                    </ul>
+                </address>
+                <p></p>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+
+                <nav>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+                <form action=""><input type="text" /><button></button></form>
+            </div>
+        </footer> -->
+        <div class="modal"></div>
     </body>
 </html>
+
+<!-- Vl -->
+<!-- <header class="header">
+            <div class="container container-header">
+                <div class="my-header-logo">
+                    <a class="my-header-logo-href" href="./index.html"
+                        >SIMPLY
+                        <span class="header-logo-accent">CHOCOLATE</span>
+
+                        <svg class="header-logo-img">
+                            <use
+                                href="./symbol-defs.svg#icon-logo"
+                                class="header-logo-icon"
+                            ></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="my-header-desktop">
+                    <nav class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-item">
+                                <a class="header-nav-link" href="">Home</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a class="header-nav-link" href=""
+                                    >How it’s made?</a
+                                >
+                            </li>
+                            <li class="header-nav-item">
+                                <a class="header-nav-link" href=""
+                                    >Chocolate is loved</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header-social-list">
+                        <li class="header-social-item">
+                            <a
+                                class="header-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href=""
+                            >
+                                <svg class="header-social-img">
+                                    <use
+                                        href="./symbol-defs.svg#icon-instagram"
+                                        class="header-social-icon"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header-social-item">
+                            <a
+                                class="header-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href=""
+                            >
+                                <svg class="header-social-img">
+                                    <use
+                                        href="./symbol-defs.svg#icon-facebook"
+                                        class="header-social-icon"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header-social-item">
+                            <a
+                                class="header-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href=""
+                            >
+                                <svg class="header-social-img">
+                                    <use
+                                        href="./symbol-defs.svg#icon-twitter"
+                                        class="header-social-icon"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-header-mobile">
+                    <label class="my-header-btn">
+                        <input type="checkbox" />
+                        <svg class="header-menu-open-btn">
+                            <use
+                                href="./symbol-defs.svg#icon-mobile-menu-open-btn"
+                                class="header-menu-open-icon"
+                            ></use>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </header> -->
