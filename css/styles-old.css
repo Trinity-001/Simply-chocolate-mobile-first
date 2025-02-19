@@ -1,0 +1,643 @@
+/* #region common--------- */
+
+:root {
+    --black: #111111;
+    --white_dark: #ffffff;
+    --orange: #fd9222;
+    --violet: #1e1823;
+    --grey: #4c4c4c;
+    --old_lace: #fcf1e0;
+    --white: #fafafa;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+dl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+svg {
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 47.99rem) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-social-list {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 48rem) and (max-widht: 72.99rem) {
+}
+
+@media screen and (min-width: 73rem) {
+}
+
+/* #endregion common--------- */
+
+/* #region header--------- */
+
+.header {
+    padding: 1.25rem 0 0.75rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+    color: var(--black);
+    flex-grow: 1;
+}
+
+.header-logo-accent {
+    font-style: normal;
+}
+
+.header-logo-img {
+    width: 1.3125rem;
+    height: 1.3125rem;
+    vertical-align: -0.4rem;
+}
+
+.header-logo-icon {
+}
+
+.header-menu-btn {
+    display: block;
+    background-color: transparent;
+}
+
+.header-menu-open-btn {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: transparent;
+    stroke: var(--black);
+}
+
+.header-menu-open-icon {
+}
+
+.header-nav {
+    margin-right: 3rem;
+}
+
+.header-nav-list {
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+}
+
+.header-social-list {
+}
+
+.header-social-item {
+}
+
+.header-social-link {
+}
+
+.header-social-icon {
+}
+
+.header-social-img {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: transparent;
+    stroke: var(--black);
+    transition: stroke 300ms ease-in;
+}
+
+.header-social-img:hover,
+.header-social-img:focus {
+    stroke: var(--orange);
+}
+
+.header-social-icon {
+}
+
+@media screen and (min-width: 48rem) {
+    .header {
+        padding: 0;
+        padding: 1.53rem 0 2.22rem;
+    }
+
+    .header-container {
+        align-items: center;
+    }
+
+    .header-nav {
+        display: block;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .header-social-list {
+        display: flex;
+        gap: 0.75rem;
+        margin-left: auto;
+    }
+
+    .header-menu-btn {
+        display: none;
+    }
+
+    .header-nav-link {
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: var(--black);
+        transition: color 300ms ease-in;
+    }
+
+    .header-nav-link:hover,
+    .header-nav-link:focus {
+        color: var(--orange);
+    }
+}
+
+@media screen and (min-width: 73rem) {
+    .header {
+        padding: 0;
+        padding: 1.5rem 0 2.25rem;
+    }
+
+    .header-social-img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .header-logo-img {
+        width: 1.5rem;
+        height: 1.5rem;
+        vertical-align: -0.3rem;
+    }
+}
+
+/* #endregion header--------- */
+
+/* #region hero--------- */
+
+.hero {
+    margin-bottom: 5rem;
+}
+
+.hero-container {
+    padding: 24.75rem 1.25rem 1.25rem;
+    background-image: linear-gradient(
+            180deg,
+            rgba(17, 17, 17, 0.4) 0%,
+            rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/1.hero/chocolate_main-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.875rem;
+}
+
+@media screen and (max-width: 47.9987rem) and (min-resolution: 192dpi) {
+    .hero-container {
+        background-image: url(../images/1.hero/chocolate_main-mobile-2x.jpg);
+    }
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 18.44rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    display: block;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: 6.25rem;
+    min-width: 7.5rem;
+    background-color: var(--orange);
+    margin-right: 0.875rem;
+    border: none;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--old_lace);
+    color: var(--orange);
+}
+
+.hero-btn-2 {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border: 1px solid #fff;
+    border-radius: 6.25rem;
+    min-width: 9.9375rem;
+    transition: border-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.hero-btn-2:hover,
+.hero-btn-2:focus {
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+.hero-mobile-btns {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.hero-scroll-btn {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: #fff;
+    transition: color 300ms ease-in-out;0
+    ;
+}
+
+.hero-scroll-btn:hover,
+.hero-scroll-btn:focus {
+    color: var(--orange);
+}
+
+.hero-scroll-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    --color1: var(--white);
+    --color2: var(--orange);
+    /* fill: var(--white); */
+    /* stroke: var(--orange); */
+    border: transparent;
+    margin-left: 0.875rem;
+    transition: fill 300ms ease-in-out, stroke 300ms ease-in-out;
+}
+
+.hero-scroll-btn:hover > .hero-scroll-icon,
+.hero-scroll-btn:focus > .hero-scroll-icon {
+    --color1: var(--orange);
+    --color2: var(--white); 
+    /* fill: var(--orange); */
+    /* stroke: var(--white); */
+}
+
+@media screen and (min-width: 48rem) {
+    .hero {
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-container {
+        padding: 0;
+        padding: 42rem 2.5rem 2.5rem;
+        background-image: linear-gradient(
+                180deg,
+                rgba(17, 17, 17, 0.4) 0%,
+                rgba(17, 17, 17, 0.4) 100%
+            ),
+            url(../images/1.hero/chocolate_main-tablet-1x.jpg);
+        background-size: cover;
+    }
+
+    @media screen and (min-width: 48rem) and (min-resolution: 192dpi) {
+        .hero-container {
+            background-image: url(../images/1.hero/chocolate_main-tablet-2x.jpg);
+        }
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        max-width: 29rem;
+    }
+
+    .hero-btn {
+        padding: 0.875rem 2.5rem;
+    }
+
+    .hero-btn-2 {
+        padding: 0.875rem 2.5rem;
+    }
+
+    .hero-scroll-btn {
+        font-size: 0.875rem;
+    }
+
+    .hero-scroll-icon {
+        width: 2.375rem;
+        height: 2.375rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .hero-scroll-btn {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 73rem) {
+
+    .hero {
+        margin-bottom: 5rem;
+    }
+
+    .hero-container {
+        padding: 0;
+        padding: 23.75rem 2.5rem 2.5rem;
+        background-image: linear-gradient(
+                180deg,
+                rgba(17, 17, 17, 0.4) 0%,
+                rgba(17, 17, 17, 0.4) 100%
+            ),
+            url(../images/1.hero/chocolate_main-1x.jpg);
+    }
+
+    @media screen and (min-width: 73rem) and (min-resolution: 192dpi) {
+        .hero-container {
+            background-image: linear-gradient(
+                    180deg,
+                    rgba(17, 17, 17, 0.4) 0%,
+                    rgba(17, 17, 17, 0.4) 100%
+                ),
+                url(../images/1.hero/chocolate_main-2x.jpg);
+        }
+    }
+}
+
+/* #endregion hero--------- */
+
+/* #region benefits--------- */
+
+.benefits {
+    background-color: var(--violet);
+}
+
+.benefits-container {
+    padding: 1.25rem;
+}
+
+.visually-hidden{
+ position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.benefits-item {
+    padding-right: 1.6875rem;
+}
+
+.benefits-image {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 3.875rem;
+    height: 3.875rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.375rem;
+    
+}
+
+.benefits-icon {
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+.benefits-subtitle {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #fff;
+    margin-bottom: 1.125rem;
+}
+
+.benefits-text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+
+
+@media screen and (min-width: 48rem) {
+    
+.benefits-container {
+    padding: 3.125rem 2rem;
+}
+
+.benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.75rem 5.5rem;
+    
+}
+
+.benefits-item {
+    padding-right: 0;
+    max-width: 31.75rem;
+    flex-basis: calc((100% - 5.5rem) / 2);
+    
+}
+}
+
+@media screen and (min-width: 73rem) {
+    .benefits-container {
+    padding: 3.125rem;
+}
+
+.benefits-list {
+    flex-wrap: nowrap;
+    gap: 5.5rem;
+    
+}
+
+.benefits-item {
+    min-width: 19.25rem;
+    flex-basis: calc((100% - 5.5rem*2) / 3);
+    position: relative;
+}
+
+.benefits-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 0rem;
+    height: 7.75rem;
+    top: 25% ;
+    right: -2.75rem;
+   
+    
+}
+}
+
+/* #endregion benefits--------- */
+
+/* #region taste--------- */
+
+
+
+/* #endregion taste--------- */
+
+/* #region made--------- */
+
+/* #endregion made--------- */
+
+/* #region products--------- */
+
+/* #endregion products--------- */
+
+/* #region sellers--------- */
+
+/* #endregion sellers--------- */
+
+/* #region review--------- */
+
+/* #endregion review--------- */
+
+/* #region footer--------- */
+
+/* #endregion footer--------- */
+
+/* #region modal--------- */
+
+/* #endregion modal--------- */
+
+/* #region hero--------- */
+
+/* #endregion hero--------- */
+
+/* -------- */
+
+/* Vl */
+
+/* .my-header-btn > input {
+    width: 0px;
+    height: 0px;
+}
+
+input:checked + .header-menu-open-btn {
+    .header-menu-open-icon {
+        display: none;
+    }
+}
+
+.my-header-logo {
+    flex-grow: 1;
+}
+
+.my-header-desktop {
+    display: flex;
+}
+
+@media screen and (max-width: 767.98px) {
+    .my-header-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .my-header-mobile {
+        display: none;
+    }
+} */

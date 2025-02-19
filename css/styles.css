@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 368px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.taste {
+}
+
+.taste-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+    max-width: 283px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.title-accent {
+    color: #fd9222;
+}
+
+.taste-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.taste-item {
+    padding: 32px 31px 28px 28px;
+    width: 335px;
+    border-radius: 15px;
+    position: relative;
+    color: #111;
+}
+
+.taste-item:nth-child(4n + 1) {
+    background-color: #fd9222;
+}
+
+.taste-item:nth-child(4n + 3) {
+    background-color: #1e1823;
+}
+
+.taste-item:nth-child(2n + 2) {
+    background-color: #fff;
+    border: 1px solid #fd9222;
+    color: #111;
+}
+
+.taste-menu-open-btn {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    top: 14px;
+    right: 14px;
+    outline: none;
+}
+
+.taste-img {
+    width: 252px;
+    height: 176px;
+    padding-left: 18px;
+    margin-bottom: 16px;
+}
+
+.taste-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.taste-item:nth-child(odd) {
+    color: #fff;
+}
+
+.taste-icon {
+    fill: transparent;
+    stroke: #fff;
+}
