@@ -59,6 +59,11 @@ button {
     outline: none;
 }
 
+picture {
+    padding: 0;
+    margin: 0;
+}
+
 svg {
     padding: 0;
 }
@@ -77,6 +82,7 @@ image {
 }
 
 .container {
+    min-width: 16.875rem; 
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
@@ -107,6 +113,7 @@ color: #111;
 }
 
 @media screen and (min-width: 48rem) and (max-widht: 72.99rem) {
+    
 }
 
 @media screen and (min-width: 73rem) {
@@ -863,6 +870,134 @@ color: var(--white_dark);
 /* #endregion taste--------- */
 
 /* #region made--------- */
+
+.made {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.made-container {
+    width: 100%;
+}
+
+.made-title {
+    margin-bottom: 2rem;
+}
+
+.made-img {
+    margin-bottom: 1.25rem;
+    min-width: 21rem;
+    max-height: 31.25rem; 
+}
+
+.made-subtitle {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.33;
+    color: var(--black);
+    margin-bottom: 1.25rem;
+    padding: 2rem 0.875rem 0;
+}
+
+.made-list {
+    text-align: left;
+    padding: 0 0.875rem 1.125rem;
+    
+}
+
+.made-item {
+    display: flex;
+    align-items: baseline;
+
+   
+}
+
+.made-item::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url(../images/svg/made-list.svg);
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.made-item:not(:last-child) {
+    margin-bottom: 1.125rem;
+}
+
+.made-text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--black);
+    padding-left: 0.5rem;;
+    
+}
+
+@media screen and (min-width: 48rem) {
+    .made {
+        margin-bottom: 6.25rem;
+        text-align: center;
+    }
+
+    .made-title {
+        margin-bottom: 3.125rem;
+        font-size: 2rem;
+    }
+
+    .made-list {
+        padding: 0 2rem 2rem;
+    }
+
+    .made-img {
+        min-width: 38.375rem;
+        max-height: 25rem; 
+    }
+
+    .made-subtitle {
+        line-height: 1.33;
+        padding-left: 2rem;
+        margin-bottom: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 73rem) {
+    .made {
+        margin-bottom: 7.5rem;
+    }
+
+    .made-wrap {
+        display: flex;
+        gap: 1.25rem;
+    }
+
+    .made-wrap-text {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        max-height: 25rem;
+    }
+
+    .made-list {
+        padding: 0;
+    }
+
+    .made-subtitle {
+        padding: 0;
+        line-height: 1.29;
+    }
+
+    .made-item:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    .made-img {
+        min-width: 37.5rem;
+        max-height: 25rem;
+    }
+}
 
 /* #endregion made--------- */
 
